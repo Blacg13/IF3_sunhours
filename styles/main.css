@@ -1,0 +1,295 @@
+/* ! div format DD */
+.inputs {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+
+            label {
+                font-size: 1.5rem;
+                color: var(--secondary-color);
+            }
+            input {
+                color: var(--secondary-color);
+                font-size: 1.5rem;
+                color: var(--primary-color);
+                padding: 0.5rem;
+            }
+            img {
+                width: 40px;
+                /* display: none; */
+                /* position: absolute; */
+            }
+            input:valid {
+                border: 2px solid green;
+            }
+            input:invalid {
+                border: 1px solid red;
+            }
+        }
+}
+    .submitdiv {
+        padding-top: 3rem;
+        width: 100%;
+        
+        .submitbtn {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+/* ! submit button */
+button {
+padding: 15px 20px;
+gap: 10px;
+font-size: 3rem;
+/* width: 124px; 
+height: 59px; */
+left: 202px;
+top: 610px;
+
+background: #F1F5FD;
+border: 1px solid var(--black-color);
+box-shadow: 0px 4px 4px var(--black-color);
+border-radius: 5px;
+}
+button:hover {
+box-shadow: 10px 10px 2px var(--black-color);
+}
+button:active {
+background: var(--black-color);
+border: 1px solid #F1F5FD;
+box-shadow: 0px 4px 4px var(--black-color);
+}
+/* ! div animation */
+/* header {
+    animation: skyheader 5s ease-in-out 250ms 1 normal;
+    
+} */
+#animationdiv {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: var(--primary-color); */
+        /* animation: sky 3s ease-in-out 250ms 1 normal; */
+        img {
+            width: 80px;
+        }
+        /* #sun {
+            animation: sun 2s ease-in-out 250ms 1 normal;
+        } */
+        #sunspinning {
+            animation: sunspinning 3s ease-in-out 250ms 1 normal;
+        }
+    }
+/* ! div résultats */
+#resultdiv {
+    gap: 1rem;
+
+    #risesetdiv {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 2rem;
+
+        img {
+            width: 100px;
+        }
+    }
+    .infodiv {
+        display: flex;
+        align-items: center;
+    }
+}
+/* ! div options de recherche */
+.search_options { 
+padding-top: 5rem;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+
+buttons {
+    color: var(--secondary-color);
+    border-radius: 100%;
+    size: 1rem;
+}
+}
+@media screen and (min-width: 600px) {
+    #risesetdiv {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+    }
+}
+
+@keyframes sky {
+    0%, 100% {
+        background-color: #2B3878;
+        /* 900 */
+    }
+    5.6%, 94.4% {
+        background-color: #31409C;
+        /* 800 */
+    }
+    11.2%, 88.8% {
+        background-color: #364EBF;
+        /* 700 */
+    }
+    16.8%, 83.2% {
+        background-color: #3F60D1;
+        /* 600 */
+    }
+    22.4%, 77.6% {
+        background-color: #547CDD;
+        /* 500 */
+    }
+    28%, 72% {
+        background-color: #749DE6;
+        /* 400 */
+    }
+    33.6%, 67.4% {
+        background-color: #A1BFEF;
+        /* 300 */
+    }
+    39.2%, 62.8% {
+        background-color: #C7D8F6;
+        /* 200 */
+    }
+    50% {
+        background-color: #E0E9F9;
+        /* 100 */
+    }
+}
+@keyframes skyheader {
+    0%, 100% {
+        background-color: var(--secondary-color);
+    }
+    10%, 90% {
+        background-color: #E0E9F9;
+    }
+    20%, 80% {
+        background-color: #C7D8F6;
+    }
+    30%, 70% {
+        background-color: #A1BFEF;
+    }
+    40%, 60% {
+        background-color: #749DE6;
+    }
+    50% {
+        background-color: #749DE6;
+    }
+}
+
+@keyframes sunspinning {
+    0% {
+        transform: rotate(0deg);
+    }    
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes sun {
+        /* ? axe Y 
+    0%, 100% {
+        transform: translateY(0%) ;
+    }
+    5.6%, 94.4% {
+        transform: translateY(+11.2%) ;
+    }
+    11.2%, 88.8% {
+        transform: translateY(+22.4%) ;
+    }
+    16.8%, 83.2% {
+        transform: translateY(+33.6%) ;
+    }
+    22.4%, 77.6% {
+        transform: translateY(+50%) ;
+    }
+    28%, 72% {
+        transform: translateY(+66.2%) ;
+    }
+    33.6%, 67.4% {
+        transform: translateY(+77.4%) ;
+    }
+    39.2%, 62.8% {
+        transform: translateY(+83.6%) ;
+    }
+    50% {
+        transform: translateY(+100%) ;
+    }
+        */
+    /* ? axe X */
+    0% {
+        transform: translateX(0%) ;
+    }
+    100% {
+        transform: translateX(650%) ;
+    }
+    /* 0%  {
+        transform: translateX(0%) translateY(0%) ;
+    }
+    5.6% {
+        transform: translateX(11.2%) translateY(+11.2%) ;
+    }
+    11.2% {
+        transform: translateX(22.4%) translateY(+22.4%) ;
+    }
+    16.8% {
+        transform: translateX(33.6%) translateY(+33.6%);
+    }
+    22.4% {
+        transform: translateX(44.8%) translateY(+50%);
+    }
+    28% {
+        transform: translateX(56%) translateY(+66.2%);
+    }
+    33.6% {
+        transform: translateX(67.4%) translateY(+77.4%);
+    }
+    39.2% {
+        transform: translateX(78.6%) translateY(+83.6%);
+    }
+    50% {
+        transform: translateX(100%) translateY(+100%);
+    }
+    62.8% {
+        transform: translateX(111.2%) translateY(+83.6%);
+    }
+    67.4% {
+        transform: translateX(122.4%) translateY(+77.4%);
+    }
+    72% {
+        transform: translateX(133.6%) translateY(+66.2%);
+    }
+    77.6% {
+        transform: translateX(144.8%)translateY(+50%) ;
+    }
+    83.2% {
+        transform: translateX(156%) translateY(+33.6%);
+    }
+    88.8% {
+        transform: translateX(167.2%) translateY(+22.4%);
+    }
+    94.4% {
+        transform: translateX(178.4%) translateY(+11.2%) ;
+    }
+    100% {
+        transform: translateX(200%) translateY(0%) ;
+    } 
+    */
+} 
