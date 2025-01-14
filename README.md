@@ -10,6 +10,7 @@ Among the things I had in mind when making the mock-up of the site, there are st
 + Responsiveness for screens over 600px wide 💻
 + Search with latitude and longitude formats other than decimal degrees (DMS, DMM and geohash) 🔍
 + Contact form ✉️
++ Improve the spinner animation 🛞
 + The ability to send or download search results on a pretty pre-created map (resembling the contact icon) ✨
 
 In any case, I hope your stay here will be pleasant and functional !
