@@ -1,6 +1,6 @@
 # SunHours
 
-Welcome to SunHours (or "East to West" from its original name : "Est à Ouest") ! 😀
+Welcome to SunHours (or "East to West" from its original name : "Est à Ouest" in French) ! 😀
 
 This website provides you with precise sunrise and sunset times based on your geographical coordinates and the date you choose 🌞
 It was my first project in HTML - CSS - JavaScript as part of a training program at Interface3 (Brussels, Belgium), after 3 and a half months of training 💪
@@ -11,8 +11,6 @@ Among the things I had in mind when making the mock-up of the site, there are st
 + Search with latitude and longitude formats other than decimal degrees (DMS, DMM and geohash) 🔍
 + Contact form ✉️
 + The ability to send or download search results on a pretty pre-created map (resembling the contact icon) ✨
-
-It's more than likely that this website will remain a work in progress, as I have other, more ambitious and complex website ideas and projects 😅
 
 In any case, I hope your stay here will be pleasant and functional !
 
